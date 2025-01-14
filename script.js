@@ -30,3 +30,36 @@ console.log(2 + 2);
 console.log(25 / 5); // Result: 5
 console.log(50 / 10); // Result: 5
 console.log(25 / 5=== 50/10); // Result: 5
+
+// TODO: implement welcomeMsg function
+
+function welcomeMSG(name) {
+
+    return `Welcome ${name}!`;
+}
+console.log(welcomeMSG("Alice")); // Expected: "Welcome Alice!"
+
+function calcGrossPrice(netPrice, tax) {
+
+    return netPrice + netPrice * tax;
+
+}
+
+console.log(calcGrossPrice(20, 0.19)); // Expected: 23.8
+console.log(calcGrossPrice(40, 0.16)); // Expected: 46.4
+
+
+function addPositive(a, b) {
+    return Math.abs(a) + Math.abs(b);
+}
+
+// TODO: Implement the addPositive function
+
+console.log(addPositive(2, 3));
+// result1 should be 5
+
+console.log(addPositive(3, -5));
+// result2 should be 8
+
+console.log(addPositive(-1, -8));
+// result2 should be 9

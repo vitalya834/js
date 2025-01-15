@@ -76,3 +76,5 @@ console.log(oldYoung(-1));
 console.log(oldYoung(86));
 // result should be elder person
 console.log(oldYoung("test"));
+
+// result should be invalid parameter

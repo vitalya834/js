@@ -105,21 +105,3 @@ console.log(isString("John" + "Doe"));
     console.log(i);
  }
 
-// 05) Coding-Task: If & switch statements
-let size = 0;
-let result;
- for (let i = 0; i < 25; i++) {
-    size += 1;
- 
-if (size > 20) {
-  result = "Greater than 20"
-} else if (size > 10) {
-  result = "Greater than 10";
-} else {
-  result = "Lower than 10";
-}
-
-console.log("size=",size,"result=",result);
-
- }
-// Returns Greater than 10 but should return Greater than 20

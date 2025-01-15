@@ -63,3 +63,40 @@ console.log(addPositive(3, -5));
 
 console.log(addPositive(-1, -8));
 // result2 should be 9
+
+
+///  04) Coding-Task: Variables
+let userName = "Brad";
+userName = "Jenna";
+
+function getUserNameLength(name) {
+    const result = name.length;
+    return result;
+
+}
+
+console.log(getUserNameLength(userName) > 4)
+// ______________ Should log true
+
+// TODO: Implement the isString function
+
+
+ function isString(value) {
+        return typeof value === "string";
+    }
+
+
+console.log(isString("Hello"));
+// result should be true
+
+console.log(isString(3));
+// result should be false
+
+console.log(isString(undefined));
+// result should be false
+
+console.log(isString(""));
+// result should be true
+
+console.log(isString("John" + "Doe"));
+// result should be true

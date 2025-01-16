@@ -31,21 +31,36 @@ console.log(oddNumbers(9, 12));
 // result should be: 9,11
  
 
-function charCount(text, char) {
-    let count = 0;
-   
+
+
+function charCount(word, char) {
+  if (char.length !== 1) {
+    return;
+}
+
+// Приведение строки и символа к нижнему регистру
+word = word.toLowerCase();
+char = char.toLowerCase();
+
+// Подсчёт количества вхождений
+let count = 0;
+for (let i = 0; i < word.length; i++) {
+    if (word[i] === char) {
+        count++;
+    }
+}
+
+return count;
+}
 
 
 // TODO: Implement the charCount function
 
-console.log(charCount("hello", "l"));
+console.log("result =",charCount("hello", "l"));
 // result should be: 2
 
-console.log(charCount("mama", "m"));
+console.log("result =",charCount("mama", "m"));
 // result should be: 2
 
-console.log(charCount("Resümee", "e"));
+console.log("result =",charCount("Resümee", "e"));
 // result should be: 3
-
-
-
